@@ -12,7 +12,7 @@
 :root{
     --bg-color: #2a2a2a;
     --second-bg-color: #202020;
-    --text-color: #fff;
+    --text-color: #00b4fc;
     --second-color: #ccc;
     --main-color: #8b2020;
     --big-font: 5rem;
@@ -102,7 +102,7 @@ section{
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url(../img/galaxia.jpg);
+    background-image: url(../img/Azul.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
