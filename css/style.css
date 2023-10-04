@@ -53,7 +53,7 @@ header{
 }
 
 .logo{
-    color: var(--text-color);
+    color: var(--second-color);
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -86,7 +86,7 @@ span{
 
 #menu-icon{
     font-size: 35px;
-    color: var(--text-color);
+    color: var(--second-color);
     z-index: 10001;
     cursor: pointer;
     margin-left: 25px;
@@ -124,7 +124,7 @@ section{
     font-weight: 500;
     border-radius: 5px;
     background: var(--main-color);
-    color: var(--text-color);   
+    color: var(--second-color);   
 }
 
 .two{
@@ -137,13 +137,13 @@ section{
 .home-text h1{
     font-size: var(--big-font);
     font-weight: 700;
-    color: var(--text-color);
+    color: var(--second-color);
     line-height: 1.1;
     margin: 0 0 8px;
 }
 
 .home-text h3{
-    color: var(--text-color);
+    color: var(--second-color);
     margin: 0 0 35px;
     font-size: 3rem;
     font-weight: 700;
@@ -167,7 +167,7 @@ section{
     padding: 12px 28px;
     background-color: var(--main-color);
     border-radius: 5px;
-    color: var(--text-color);
+    color: var(--second-color);
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 600;
@@ -184,7 +184,82 @@ section{
     justify-content: center;
     font-size: 15px;
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--second-color);
     margin-left: 35px;
 }
 
+.btn2 span i{
+    height: 55px;
+    width: 55px;
+    background: var(--main-color);
+    color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.btn2 span i:hover{
+    transform: scale(0.9);
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.btn-socials{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--second-color);
+    margin-right: 15px;
+}
+
+
+.btn-socials:nth-child(3){
+    margin-right: 0px;
+}
+
+.btn-socials span i{
+    height: 55px;
+    width: 55px;
+    background: var(--main-color);
+    color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    border-radius: 50%;
+    transition: all .45s ease;
+}
+
+.btn-socials span i:hover{
+    transform: scale(0.9);
+}
+
+header.sticky{
+    background: var(--bg-color);
+    border-bottom: 1px solid #ffffff1a;
+    padding: 12px 15%;
+    height: 10vh;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img{
+    max-width: 430px;
+    height: 630px;
+}
