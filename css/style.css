@@ -12,9 +12,10 @@
 :root{
     --bg-color: #2a2a2a;
     --second-bg-color: #202020;
-    --text-color: #00b4fc;
+    --text-color: #fff;
     --second-color: #ccc;
     --main-color: #8b2020;
+    --cinza-escuro: #506266;
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
@@ -48,8 +49,6 @@ header{
     padding: 22px 15%;
     border-bottom: 1px solid transparent; 
     transition: all .45s ease;
-
-
 }
 
 .logo{
@@ -59,8 +58,12 @@ header{
     letter-spacing: 1px;
 }
 
-span{
+.logo span {
     color: var(--main-color);
+}
+
+span{
+    color: var(--second-color);
 }
 
 .navlist{
@@ -73,6 +76,7 @@ span{
     font-weight: 500;
     margin: 0 25px;
     transition: all .45s ease;
+    box-shadow: var(--main-color) 0px 2px 5px -1px,rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
 }
 
@@ -135,7 +139,7 @@ section{
 }
 
 .home-text h1{
-    font-size: var(--big-font);
+    font-size: var(--h2-font);
     font-weight: 700;
     color: var(--second-color);
     line-height: 1.1;
@@ -262,4 +266,89 @@ header.sticky{
 .about-img img{
     max-width: 430px;
     height: 630px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--main-color) 0px 2px 5px -1px,rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.about-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+    color: var(--main-color);
+}
+
+.about-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p{
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height: 1.8;
+    margin-bottom: 4rem;
+}
+
+.services{
+    background: var(--second-bg-color);
+}
+
+.main-text{
+    text-align: center;
+}
+
+.main-text p{
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.main-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+
+}
+
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    max-height: 300px;
+    min-height: 200px;
+    text-align: center;
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+
+.s-icons i{
+    font-size: 36px;
+}
+
+.box h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.box:hover{
+    transform: translateY(-8px);
+}
+
+.portfolio-content{
+    display: grid;
 }
