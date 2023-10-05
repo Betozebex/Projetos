@@ -14,9 +14,9 @@
     --second-bg-color: #202020;
     --text-color: #fff;
     --second-color: #ccc;
-    --main-color: #8b2020;
+    --main-color: #D92525;
     --cinza-escuro: #506266;
-    --big-font: 5rem;
+    --big-font: 4.5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
     --p-small-font: 0.9rem;
@@ -52,7 +52,7 @@ header{
 }
 
 .logo{
-    color: var(--second-color);
+    color: var(--text-color);
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -63,7 +63,7 @@ header{
 }
 
 span{
-    color: var(--second-color);
+    color: var(--text-color);
 }
 
 .navlist{
@@ -71,8 +71,8 @@ span{
 }
 
 .navlist a{
-    color: var(--second-color);
-    font-size: 17px;
+    color: var(--text-color);
+    font-size: 19px;
     font-weight: 500;
     margin: 0 25px;
     transition: all .45s ease;
@@ -98,9 +98,7 @@ span{
 
 }
 
-section{
-    padding: 160px 15% 120px;
-}
+
 
 .home{
     position: relative;
@@ -112,6 +110,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding: 160px 15% 120px;
 }
 
 .slide{
@@ -138,16 +137,16 @@ section{
     font-weight: 500;
 }
 
-.home-text h1{
-    font-size: var(--h2-font);
+.home-text h1{    
+    font-size: var(--big-font);
     font-weight: 700;
-    color: var(--second-color);
+    color: var(--text-color);
     line-height: 1.1;
-    margin: 0 0 8px;
+    margin: 0 0 6px;
 }
 
 .home-text h3{
-    color: var(--second-color);
+    color: var(--text-color);
     margin: 0 0 35px;
     font-size: 3rem;
     font-weight: 700;
@@ -157,7 +156,7 @@ section{
 .home-text p{
     color: var(--second-color);
     font-size: var(--p-font);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .button{
@@ -261,20 +260,23 @@ header.sticky{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 1.5rem;
+    padding: 160px 15% 300px;
 }
 
 .about-img img{
-    max-width: 430px;
-    height: 630px;
+    max-width: 500px;
+    height: 500px;
     width: 100%;
     border-radius: 10px;
     box-shadow: var(--main-color) 0px 2px 5px -1px,rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .about-text h2 {
+    max-width: 255px;
     font-size: var(--h2-font);
     line-height: 1;
     color: var(--main-color);
+    box-shadow: var(--main-color) 0px 2px 5px -1px,rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .about-text h4{
@@ -294,6 +296,7 @@ header.sticky{
 
 .services{
     background: var(--second-bg-color);
+    padding: 160px 15% 120px;
 }
 
 .main-text{
@@ -349,6 +352,86 @@ header.sticky{
     transform: translateY(-8px);
 }
 
+
+.portfolio{
+    padding: 160px 15% 120px;
+}
+
 .portfolio-content{
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.row img{
+    max-width: 350px;
+    min-width: 100%;
+    min-height: 375px;
+    max-height: 375px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0),var(--main-color));
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+
+}
+
+.layer h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer p{
+    color: var(--second-color);
+    font-size: var(--p-small-font);
+    line-height: 1.8;
+}
+
+.layer i{
+    color: var(--main-color);
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--text-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.row:hover img{
+    transform: scale(1.1);
+
+}
+
+.row:hover .layer{
+    height: 100%;
 }
