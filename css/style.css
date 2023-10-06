@@ -145,13 +145,51 @@ span{
     color: var(--cor-branca);
 }
 
+
 .botoes-contatos-um{
-    margin: 5px;
-    padding: 4px;
-    border-radius: 10px;
-    border: solid 2px;
+    height: 47px;
+    width: 47px;
     background: var(--text-color);
+    color: var(--second-color);     
+    border-radius: 100%;
+    margin-right: 15px;
+    margin-left: 15px;
+    transition: all .45s ease;
+        
 }
+
+.botoes-contatos-um img:hover{
+    transform: scale(0.9);
+}
+
+.botoes-contatos-dois{
+    height: 50px;
+    width: 50px;    
+    color: var(--second-color);    
+    font-size: 35px;
+    border-radius: 100%;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.botoes-contatos-dois img:hover{
+    transform: scale(0.9);
+}
+
+.botoes-contatos-tres{
+    height: 50px;
+    width: 50px;    
+    color: var(--second-color);    
+    font-size: 35px;
+    border-radius: 100%;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.botoes-contatos-tres img:hover{
+    transform: scale(0.9);
+}
+
 
 .home-text h1{    
     font-size: var(--big-font);
@@ -196,6 +234,7 @@ span{
     font-weight: 600;
     transition: all .45s ease;
 }
+
 
 .btn:hover{
     transform: scale(0.9);
@@ -266,6 +305,8 @@ span{
 
 .btn-socials span i:hover{
     transform: scale(0.9);
+
+
 }
 
 header.sticky{
