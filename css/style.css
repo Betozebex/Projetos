@@ -147,8 +147,7 @@ span{
 
 
 .botoes-contatos-um{
-    height: 47px;
-    width: 47px;
+    height: 48px; 
     background: var(--text-color);
     color: var(--second-color);     
     border-radius: 100%;
